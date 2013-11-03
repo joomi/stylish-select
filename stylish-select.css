@@ -1,0 +1,56 @@
+/*
+Stylish Select 0.4.1 - $ plugin to replace a select drop down box with a stylable unordered list
+http://scottdarby.com/
+
+Copyright (c) 2009 Scott Darby
+
+Requires: jQuery 1.3 or newer
+
+Dual licensed under the MIT and GPL licenses.
+
+*/
+
+/*==================================
+Hide lists on page load
+====================================*/
+
+.stylish-select ul.newList {left:-9999px;}
+
+/*==================================
+red curvy example
+====================================*/
+ul.newList * {margin:0; padding:0;}
+ul.newList a {color: #000; text-decoration:none; display:block;}
+ul.newList {  border:1px solid #ccc; margin:12px 0 0 0; padding:0; list-style:none; color:#000; width:242px; background:#fff; position:absolute;  top:22px; left:0; overflow:auto; z-index:9999;  
+
+ -webkit-border-bottom-right-radius: 4px;
+-moz-border-bottom-right-radius: 4px;
+border-bottom-right-radius: 4px;
+ -webkit-border-bottom-left-radius: 4px;
+-moz-border-bottom-left-radius: 4px;
+border-bottom-left-radius: 4px;}
+.newListSelected {
+font-size:14px;
+ -webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+width:227px;
+margin-left:9px;
+margin-top:5px;
+border:none;
+color:#333333;
+padding:8px;
+background:#f2f2f2  url(../images/dropdown.gif) 96% 8px no-repeat;
+}
+.newListSelected span {width:284px; display:block;}
+ul.newList li a {padding:3px 8px; display: block;}
+ul.newList li a:focus {-moz-outline-style: none;}
+.selectedTxt {width:258px; overflow:hidden; height:16px; padding:0 23px 0 0;}
+.hiLite {background:#077fbd!important; color:#fff!important;}
+.hiLite a {background:#077fbd!important; color:#fff!important;}
+.newListHover {background:#00a7e9!important; color:#000!important; cursor:default;}
+.newListSelHover, .newListSelFocus { cursor:default;}
+.newListOptionTitle {font-weight:bold;}
+.newListOptionTitle ul {margin:3px 0 0;}
+.newListOptionTitle li {font-weight:normal; border-left:1px solid #ccc;}
+

@@ -1,3 +1,15 @@
+/*
+Stylish Select 0.4.1 - $ plugin to replace a select drop down box with a stylable unordered list
+http://scottdarby.com/
+
+Copyright (c) 2009 Scott Darby
+
+Requires: jQuery 1.3 or newer
+
+Dual licensed under the MIT and GPL licenses.
+
+*/
+
 (function($){$('html').addClass('stylish-select');Array.prototype.indexOf=function(obj,start){for(var i=(start||0);i<this.length;i++){if(this[i]==obj){return i;}}}
 $.fn.extend({getSetSSValue:function(value){if(value){$(this).val(value).change();return this;}else{return $(this).find(':selected').val();}},resetSS:function(){var oldOpts=$(this).data('ssOpts');$this=$(this);$this.next().remove();$this.unbind('.sSelect').sSelect(oldOpts);}});$.fn.sSelect=function(options){return this.each(function(){var defaults={defaultText:'Please select',animationSpeed:0,ddMaxHeight:'',containerClass:''};var opts=$.extend(defaults,options),$input=$(this),$containerDivText=$('<div class="selectedTxt"></div>'),$containerDiv=$('<div class="newListSelected '+opts.containerClass+'"></div>'),$newUl=$('<ul class="newList" style="visibility:hidden;"></ul>'),itemIndex=-1,currentIndex=-1,keys=[],prevKey=false,prevented=false,$newLi;$(this).data('ssOpts',options);if($input.attr('disabled'))
 {$containerDivText.addClass('disabled');}

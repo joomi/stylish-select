@@ -1,9 +1,9 @@
+
 <h1>Stylish Select 0.4.1</h1>
 <h2>A cross-browser, accessible alternative to the standard form element which can be fully customised with CSS</h2>
 <p>Stylish Select attempts to replicate the functionality of the browser default select box as closely as possible with support for keyboard navigation, and intelligent positioning.</p>
 <p>Stylish Select aims to have a minimal code footprint and weighs in at just over 3KB when minified.</p>
-<p><a href="http://www.scottdarby.com/2009/05/jquery-plugin-stylish-select-unobstrusive-select-box-replacement/">Stylish Select blog post</a></p>
-<a href="http://github.com/sko77sun/Stylish-Select">Get latest source code from GitHub</a>
+<a href="https://github.com/joomi/stylish-select">Get latest source code from GitHub</a>
 <h2>Usage</h2>
 <p>First, include the stylesheet, jQuery and the stylish select .js file in your html head tag</p>
 <p>The plugin can be used to replace any select with the following:</p>
